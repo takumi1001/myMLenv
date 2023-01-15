@@ -1,0 +1,6 @@
+artifact_location: file:///C:/Users/Owner/source/repos/myMLenv/samples/mlruns/220654029583824991
+creation_time: 1673797825170
+experiment_id: '220654029583824991'
+last_update_time: 1673797825170
+lifecycle_stage: active
+name: cifar10-sample
