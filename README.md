@@ -3,14 +3,14 @@
 
 自分用です。
 
-# Pytorch
+## Pytorch
 環境によって固定せざる負えない。自分のデスクトップ環境向けは以下のようになる。
 ```
 poetry install --with torch1131-cu117-cp38-win
 ```
 必要に応じてOptinal Groupを作ること。
 
-# 備忘録
+## 備忘録
 `python = ">=3.8.1,<3.10"`にしている理由
  - Google Colabは`Python 3.8`
    - pyenvで`3.8.10`を明示的に指定している
