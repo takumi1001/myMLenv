@@ -1,0 +1,47 @@
+[tool.poetry]
+name = "<set project name>"
+version = "0.0.0"
+description = "<Set Description>"
+authors = ["Takumi Tamura <tamutamuphone@gmail.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = ">=3.8.1,<3.10"
+numpy = "^1.24.1"
+pandas = "^1.5.2"
+matplotlib = "^3.6.3"
+scipy = "^1.10.0"
+scikit-learn = "^1.2.0"
+japanize-matplotlib = "^1.1.3"
+tensorflow = ">=2.10,<2.11"
+mlflow = "^2.1.1"
+jupyterlab = "^3.5.2"
+more-itertools = "^9.0.0"
+tqdm = "^4.64.1"
+importlib-resources = "^5.10.2"
+pillow = "^9.4.0"
+hydra-core = "^1.3.1"
+hydra-optuna-sweeper = "^1.2.0"
+optuna = "2.10.1"
+hyperopt = "^0.2.7"
+ipywidgets = "^8.0.4"
+
+[tool.poetry.group.dev.dependencies]
+mypy = "^0.991"
+flake8 = "^6.0.0"
+pytest = "^7.2.1"
+black = "^22.12.0"
+isort = "^5.11.4"
+
+[tool.poetry.group.torch1131-cu117-cp38-win]
+optional = true
+
+[tool.poetry.group.torch1131-cu117-cp38-win.dependencies]
+python = ">=3.8.1,<3.9"
+torch = { url = "https://download.pytorch.org/whl/cu117/torch-1.13.1%2Bcu117-cp38-cp38-win_amd64.whl" }
+torchvision = { url = "https://download.pytorch.org/whl/cu117/torchvision-0.14.1%2Bcu117-cp38-cp38-win_amd64.whl" }
+torchaudio = { url = "https://download.pytorch.org/whl/cu117/torchaudio-0.13.1%2Bcu117-cp38-cp38-win_amd64.whl" }
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
