@@ -3,6 +3,12 @@
 
 自分用です。
 
+## Pyspark
+ローカルに構築したApache Sparkを利用して高速な処理ができるようにします．
+```
+poetry install --with pyspark
+```
+
 ## Pytorch
 環境によって固定せざる負えない。自分のデスクトップ環境向けは以下のようになる。
 ```
